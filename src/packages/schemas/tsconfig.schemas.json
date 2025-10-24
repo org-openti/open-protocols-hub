@@ -1,0 +1,17 @@
+{
+    "extends": "../../../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "tsBuildInfoFile": "tsconfig.schemas.tsbuildinfo",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "."
+    ]
+}

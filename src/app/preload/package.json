@@ -1,0 +1,26 @@
+{
+    "name": "@oph/preload",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "dist/preload.mjs",
+    "scripts": {
+        "clean": "rm -rf dist && rm -f tsconfig.preload.tsbuildinfo",
+        "build": "tsc -p tsconfig.preload.json",
+        "build:prod": "node ./build-prod.ts"
+    },
+    "keywords": [],
+    "author": "O Profeta",
+    "license": "ISC",
+    "packageManager": "pnpm@10.18.1",
+    "dependencies": {
+        "zod": "^4.1.12",
+        "@oph/types": "workspace:*",
+        "@oph/ipc": "workspace:*"
+    },
+    "devDependencies": {
+        "esbuild": "^0.25.11",
+        "electron": "37.2.0",
+        "typescript": "^5.9.3"
+    }
+}

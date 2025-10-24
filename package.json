@@ -1,0 +1,22 @@
+{
+  "name": "open-protocols-hub",
+  "author": "O Profeta",
+  "description": "Application to serve as a hub for connection and integration between several free protocols with a focus on total user control.",
+  "icon": "assets/App Icon.png",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/main/main.mjs",
+  "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:prod": "pnpm run clean && pnpm -r run build:prod && electron-builder --config electron-builder.json",
+    "clean:all": "pnpm -r run clean && pnpm run clean",
+    "clean": "rm -rf dist-prod"
+  },
+  "devDependencies": {
+    "electron": "38.3.0",
+    "@types/node": "24.7.2",
+    "electron-builder": "^26.0.12"
+  }
+}

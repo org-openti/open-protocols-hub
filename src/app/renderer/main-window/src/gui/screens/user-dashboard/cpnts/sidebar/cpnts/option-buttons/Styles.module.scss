@@ -1,0 +1,38 @@
+.rootWrapper_OptionButtonBase {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 3em;
+    max-height: 3em;
+
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+
+    padding: 0.3em;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    &:hover {
+
+        border-left: 2px solid rgba(255, 0, 0, 0.5);
+    }
+
+    img {
+
+        width: 100%;
+    }
+}
+
+.rootWrapper_OptionButtonBase_Selected {
+
+    border-left: 2px solid rgba(255, 0, 0, 0.5);
+}

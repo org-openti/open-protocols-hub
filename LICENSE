@@ -1,0 +1,42 @@
+OpenTI Public Source License — Version 1.0
+Copyright (c) 2025 O Profeta (OpenTI)
+
+1. Purpose
+This software, called "Open Protocols Hub", part of the OpenTI ecosystem, is publicly released
+for the purposes of auditing, transparency, and source code verification. It is provided "as is"
+without any warranties of any kind.
+
+2. Use
+The code may be used for personal or commercial purposes. Commercial use is permitted.
+
+3. Modifications
+Modifying the code for personal use is allowed. Any modifications intended for distribution
+or inclusion in other software require **prior written authorization from the copyright holder**, O Profeta (OpenTI).
+
+4. Distribution
+Unmodified copies may be freely redistributed as long as **credits and this license** are preserved.
+Distribution of modified copies requires prior authorization.
+
+5. Credits and Ownership
+All copyrights remain with O Profeta. In any external use of the software, credits must be preserved,
+mentioning the pseudonym "O Profeta" and the entity "OpenTI".
+
+6. Trademark Use
+The names "OpenTI" and "Open Protocols Hub" may be referenced for documentation or descriptive purposes,
+but may not be used for commercial promotion or advertising without prior authorization.
+
+7. Warranties
+The software is provided "as is", without any express or implied warranties.
+The author is not liable for any damages or losses resulting from the use of the software.
+
+8. Auditing and Transparency
+The public availability of the code is intended to allow auditing, security analysis,
+and verification of the software's transparency, without implying permission to redistribute
+or use without authorization.
+
+9. Future License Changes
+The copyright holder reserves the right to alter the license for future versions of
+the software, including potential release under a more permissive license. No commitment is made regarding this.
+
+10. Other
+Any matters not covered by this license are under the sole discretion of the copyright holder.

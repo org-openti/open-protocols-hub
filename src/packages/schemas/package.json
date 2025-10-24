@@ -1,0 +1,19 @@
+{
+	"name": "@oph/schemas",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "tsc -p tsconfig.schemas.json",
+        "build:prod": "pnpm run build",
+		"clean": "rm -rf dist && rm -f tsconfig.schemas.tsbuildinfo"
+	},
+	"dependencies": {
+		"zod": "^4.1.5"
+	},
+	"devDependencies": {
+		"typescript": "^5.9.3"
+	},
+	"exports": {
+		"./*": "./dist/*"
+	}
+}

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "erasableSyntaxOnly": true,
+        "strict": true,
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "outDir": "dist-dev",
+        "rootDir": "src",
+        "skipLibCheck": true,
+        "target": "esnext",
+        "tsBuildInfoFile": "tsconfig.main-dev.tsbuildinfo",
+        "verbatimModuleSyntax": true,
+    },
+    "include": [
+        "src",
+    ],
+    "references": [
+        {
+            "path": "../preload/tsconfig.preload.json"
+        },
+        {
+            "path": "../renderer/main-window/tsconfig.json"
+        }
+    ]
+}

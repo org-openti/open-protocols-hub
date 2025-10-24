@@ -1,0 +1,24 @@
+:root[app-theme="light"] {
+
+    --color-bg: #ffffff;
+    --color-bg-contrast: #000000;
+    --color-bg-contrast-hover: #4b4b4b;
+
+
+    --color-text: #111111;
+    --color-text-contrast: #ffffff;
+
+    --color-separator-line: #000000;
+}
+
+:root[app-theme="dark"] {
+
+    --color-bg: #000000;
+    --color-bg-contrast: #ffffff;
+    --color-bg-contrast-hover: #bdbdbd;
+
+    --color-text: #f5f5f5;
+    --color-text-contrast: #000000;
+
+    --color-separator-line: #ffffff;
+}

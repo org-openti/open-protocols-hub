@@ -1,0 +1,22 @@
+@use './tokens/variables' as *;
+@use './tokens/themes' as *;
+
+body {
+
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+* {
+
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease;
+
+  transform: none;
+}

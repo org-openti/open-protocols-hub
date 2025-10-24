@@ -1,0 +1,87 @@
+.rootWrapper_NewProfileScreen {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+
+    gap: 3em;
+
+    padding: 1em;
+
+    width: 100%;
+    height: 100%;
+
+    color: rgb(255, 255, 255);
+
+    position: relative;
+
+    .contentWrapper {
+
+        gap: 1em;
+
+        .personalDataWrapper {
+
+            .skeyWrapper {
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 0.5em;
+                background-color: rgb(122, 122, 122);
+
+                width: 100%;
+
+                border-radius: 8px;
+                padding: 0.5em;
+
+                .nameInputWrapper {
+
+                    display: flex;
+
+                    width: 100%;
+
+                    gap: 0.5em;
+
+                    justify-content: center;
+                    align-items: center;
+
+                    input {
+
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        .buttonsWrapper {
+
+            display: flex;
+            justify-content: flex-end;
+
+            gap: 1em;
+        }
+
+        .separator {
+
+            display: flex;
+            height: 100%;
+        }
+
+        .optionsButtonsWrapper {
+
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            button {
+
+                width: 10em;
+            }
+        }
+    }
+}

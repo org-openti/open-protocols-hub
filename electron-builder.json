@@ -1,0 +1,42 @@
+{
+    "appId": "org.open-ti.open-protocols-hub",
+    "extraMetadata": {
+        "main": "main/main.mjs"
+    },
+    "directories": {
+        "output": "dist-prod"
+    },
+    "files": [
+        {
+            "from": "src/app/main/dist-prod",
+            "to": "main",
+            "filter": [
+                "**/*"
+            ]
+        },
+        {
+            "from": "src/app/renderer/main-window/dist-prod",
+            "to": "renderer/main-window/",
+            "filter": [
+                "**/*"
+            ]
+        },
+        {
+            "from": "src/app/preload/dist-prod",
+            "to": "preload",
+            "filter": [
+                "**/*"
+            ]
+        },
+        "package.json"
+    ],
+    "icon": "assets/app-icon.png",
+    "npmRebuild": false,
+    "asar": true,
+    "publish": null,
+    "linux": {
+        "target": [
+            "AppImage"
+        ]
+    }
+}

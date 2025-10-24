@@ -1,0 +1,36 @@
+.rootWrapper_NewNostrProfileScreen {
+
+    .nkeyWrapper {
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        
+        gap: 1em;
+
+        
+        .nkeyInput {
+
+            width: 100%;
+        }
+
+        .newKeyButton {
+
+            height: 100%;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+
+    .profilePasswordInput {
+
+        width: 30em;
+        max-width: 100%;
+    }
+
+    .optionButton {
+
+        width: 10em;
+    }
+}

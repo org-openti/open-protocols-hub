@@ -1,0 +1,30 @@
+.defaultButton {
+
+    all: unset;
+    box-sizing: border-box;
+
+    color: var(--color-text-contrast);
+    font-size: 1rem;
+    background-color: var(--color-bg-contrast);
+    transition: none;
+    padding: 0.25em;
+    border-radius: 4px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    white-space: nowrap;
+
+    &:hover {
+
+        background-color: var(--color-bg-contrast-hover);
+    }
+
+    &:disabled {
+
+        opacity: 0.6;
+        cursor: not-allowed;
+        filter: grayscale(0.2);
+    }
+}

@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"erasableSyntaxOnly": true,
+		"isolatedModules": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"noImplicitAny": true,
+		"outDir": "dist",
+		"rootDir": "src",
+		"preserveSymlinks": false,
+		"strict": true,
+		"target": "ES2022",
+		"tsBuildInfoFile": "tsconfig.ipc.tsbuildinfo",
+		"verbatimModuleSyntax": true,
+		"types": [
+			"electron"
+		]
+	},
+	"include": [
+		"src"
+	],
+	"references": [
+		{
+			"path": "../types/tsconfig.types.json"
+		}
+	]
+}

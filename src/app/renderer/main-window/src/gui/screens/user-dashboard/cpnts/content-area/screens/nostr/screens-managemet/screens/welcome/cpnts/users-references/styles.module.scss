@@ -1,0 +1,36 @@
+.rootWrapper_UsersReferencesList {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+    width: 30em;
+
+    height: 8em;
+
+    .listWrapper {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 0.5em;
+        
+        overflow: auto;
+        
+        background-color: rgb(82, 82, 82);
+
+        .litItem {
+
+            padding: 0.2em;
+
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+
+                background-color: rgb(103, 107, 107);
+            }
+        }
+    }
+}

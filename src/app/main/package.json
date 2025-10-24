@@ -1,0 +1,31 @@
+{
+    "name": "@oph/main",
+    "version": "1.0.0",
+    "description": "test",
+    "main": "dist-dev/main.mjs",
+    "type": "module",
+    "scripts": {
+        "dev": "NODE_ENV=development electron .",
+        "clean": "rm -rf dist-dev && rm -rf dist-prod && rm -rf build-prod && rm -f tsconfig.main.dev.tsbuildinfo && rm -f tsconfig.main.prod.tsbuildinfo",
+        "prepare:prod": "pnpm -r run build && pnpm install --filter @oph/main --prod",
+        "build": "tsc -p tsconfig.main.json",
+        "build:prod": "node ./build-prod.ts"
+    },
+    "keywords": [],
+    "author": "O Profeta",
+    "license": "ISC",
+    "packageManager": "pnpm@10.18.1",
+    "dependencies": {
+        "@oph/ipc": "workspace:*",
+        "@oph/schemas": "workspace:*",
+        "@oph/types": "workspace:*",
+        "nostr-tools": "^2.15.0",
+        "uuid": "^11.1.0",
+        "zod": "^4.1.5"
+    },
+    "devDependencies": {
+        "electron": "38.3.0",
+        "esbuild": "^0.25.11",
+        "typescript": "^5.9.3"
+    }
+}

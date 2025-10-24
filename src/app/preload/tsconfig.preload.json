@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "tsBuildInfoFile": "tsconfig.preload.tsbuildinfo",
+        "strict": true,
+        "target": "esnext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "outDir": "dist",
+        "skipLibCheck": true,
+        "verbatimModuleSyntax": true,
+        "rootDir": "src",
+    },
+    "include": [
+        "src"
+    ],
+}

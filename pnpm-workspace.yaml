@@ -2,6 +2,7 @@ packages:
   - src/app/main
   - src/app/preload
   - src/app/renderer/main-window
+  - src/app/renderer/authentication-window
   - src/packages/types
   - src/packages/schemas
   - src/packages/ipc

@@ -1,8 +1,9 @@
 packages:
   - src/app/main
-  - src/app/preload
-  - src/app/renderer/main-window
+  - src/app/preload/authentication-window
+  - src/app/preload/main-window
   - src/app/renderer/authentication-window
+  - src/app/renderer/main-window
   - src/packages/types
   - src/packages/schemas
   - src/packages/ipc

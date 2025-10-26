@@ -22,8 +22,8 @@
             ]
         },
         {
-            "from": "src/app/preload/dist-prod",
-            "to": "preload",
+            "from": "src/app/preload/main-window/dist-prod",
+            "to": "preload/main-window",
             "filter": [
                 "**/*"
             ]

@@ -5,7 +5,7 @@
     "description": "",
     "main": "dist/preload.mjs",
     "scripts": {
-        "clean": "rm -rf dist && rm -f tsconfig.preload.tsbuildinfo",
+        "clean": "rm -rf dist && rm -rf tmp",
         "build": "tsc -p tsconfig.preload.json",
         "build:prod": "node ./build-prod.ts"
     },

@@ -11,7 +11,7 @@
 		"preserveSymlinks": false,
 		"strict": true,
 		"target": "ES2022",
-		"tsBuildInfoFile": "tsconfig.ipc.tsbuildinfo",
+		"tsBuildInfoFile": "tmp/tsconfig.ipc.tsbuildinfo",
 		"verbatimModuleSyntax": true,
 		"types": [
 			"electron"

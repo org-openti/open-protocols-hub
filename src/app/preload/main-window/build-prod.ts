@@ -16,7 +16,7 @@ await esbuild.build({
   target: 'node18',          // ou a versão suportada pelo Electron
   outfile: path.resolve(__dirname, 'dist-prod/preload.mjs'),
   format: 'esm',             // Electron 28+ usa ESM nativamente
-  tsconfig: './tsconfig.preload-prod.json',
+  tsconfig: './tsconfig.preload.json',
 
   sourcemap: true,
   external: [

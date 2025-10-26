@@ -8,7 +8,7 @@
         "rootDir": "src",
         "skipLibCheck": true,
         "target": "esnext",
-        "tsBuildInfoFile": "tsconfig.main-dev.tsbuildinfo",
+        "tsBuildInfoFile": "tmp/tsconfig.main-dev.tsbuildinfo",
         "verbatimModuleSyntax": true,
     },
     "include": [
@@ -16,7 +16,7 @@
     ],
     "references": [
         {
-            "path": "../preload/tsconfig.preload.json"
+            "path": "../preload/main-window/tsconfig.preload.json"
         },
         {
             "path": "../renderer/main-window/tsconfig.json"

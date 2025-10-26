@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "tsc -p tsconfig.types.json",
         "build:prod": "pnpm run build",
-		"clean": "rm -rf dist && rm -f tsconfig.types.tsbuildinfo"
+		"clean": "rm -rf dist && rm -rf tmp"
 	},
 	"keywords": [],
 	"author": "O Profeta",

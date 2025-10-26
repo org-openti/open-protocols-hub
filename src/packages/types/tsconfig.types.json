@@ -12,7 +12,7 @@
     "rootDir": "src",
     "strict": true,
     "target": "ESNext",
-    "tsBuildInfoFile": "tsconfig.types.tsbuildinfo",
+    "tsBuildInfoFile": "tmp/tsconfig.types.tsbuildinfo",
   },
   "include": [
     "src"

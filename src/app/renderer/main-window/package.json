@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsc -b && vite build",
     "build:prod": "pnpm run build",
-    "clean": "rm -rf dist && rm -f tsconfig.renderer.tsbuildinfo",
+    "clean": "rm -rf dist && rm -rf tmp",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"

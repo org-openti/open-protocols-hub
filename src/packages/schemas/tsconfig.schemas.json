@@ -6,7 +6,7 @@
         "composite": true,
         "declaration": true,
         "declarationMap": true,
-        "tsBuildInfoFile": "tsconfig.schemas.tsbuildinfo",
+        "tsBuildInfoFile": "tmp/tsconfig.schemas.tsbuildinfo",
         "strict": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true

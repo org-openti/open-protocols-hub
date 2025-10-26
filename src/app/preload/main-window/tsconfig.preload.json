@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "composite": true,
-        "tsBuildInfoFile": "tsconfig.preload.tsbuildinfo",
+        "tsBuildInfoFile": "tmp/tsconfig.preload.tsbuildinfo",
         "strict": true,
         "target": "esnext",
         "module": "NodeNext",

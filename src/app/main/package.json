@@ -6,7 +6,7 @@
     "type": "module",
     "scripts": {
         "dev": "NODE_ENV=development electron .",
-        "clean": "rm -rf dist-dev && rm -rf dist-prod && rm -rf build-prod && rm -f tsconfig.main.dev.tsbuildinfo && rm -f tsconfig.main.prod.tsbuildinfo",
+        "clean": "rm -rf dist-dev && rm -rf dist-prod && rm -rf build-prod && rm -rf tmp",
         "prepare:prod": "pnpm -r run build && pnpm install --filter @oph/main --prod",
         "build": "tsc -p tsconfig.main.json",
         "build:prod": "node ./build-prod.ts"

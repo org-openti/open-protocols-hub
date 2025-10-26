@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"tsBuildInfoFile": "tsconfig.renderer.tsbuildinfo",
+		"tsBuildInfoFile": "tmp/tsconfig.renderer.tsbuildinfo",
 		"target": "ES2022",
 		"useDefineForClassFields": true,
 		"lib": [

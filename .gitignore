@@ -15,6 +15,7 @@ build-prod
 dist-ssr
 node_modules
 releases
+tmp
 
 # Editor directories and files
 .vscode/*

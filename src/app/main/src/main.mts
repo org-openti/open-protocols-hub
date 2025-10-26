@@ -9,8 +9,8 @@ app.on('ready', () => {
 
     // OPTIMIZE: Implement a more accurate check to obtain the preload path in the development and production environments, if possible in a specific module for this purpose.
     const preloadPath = app.isPackaged
-        ? join(app.getAppPath(), 'preload/preload.mjs')
-        : join(app.getAppPath(), '../preload/dist-prod/preload.mjs');
+        ? join(app.getAppPath(), 'preload/main-window/preload.mjs')
+        : join(app.getAppPath(), '../preload/main-window/dist-prod/preload.mjs');
 
     const mainWindow = new BrowserWindow({
 

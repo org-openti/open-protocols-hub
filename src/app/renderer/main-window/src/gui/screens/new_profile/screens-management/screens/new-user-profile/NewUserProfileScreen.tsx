@@ -1,4 +1,4 @@
-import type { ProfileCreationProgressType } from "@oph/ipc/channels/app-management/channels/create-user-profile.js";
+import type { ProfileCreationProgressType } from "@oph/ipc/channels/main-window/app-management/channels/create-user-profile.js";
 
 import { useEffect, useState } from "react";
 import { ContentWrapper } from "../../../../../../components/content_wrapper/ContentWrapper";

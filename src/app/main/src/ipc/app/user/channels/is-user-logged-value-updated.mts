@@ -1,5 +1,5 @@
 import { BrowserWindow } from "electron";
-import { configureMainSideChannel, StateEnum, type State } from "@oph/ipc/channels/app-management/user-management/channels/user-session-state.js";
+import { configureMainSideChannel, StateEnum, type State } from "@oph/ipc/channels/main-window/app-management/user-management/channels/user-session-state.js";
 import { addUserSessionChangeListener, isUserLogged } from "../../../../user-session/user-session.mjs";
 
 export function configureUserSessionStateChannel(browseWindow: BrowserWindow) {

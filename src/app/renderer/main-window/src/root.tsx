@@ -1,6 +1,6 @@
 import { ScreensRouter } from "./router/ScreensRouter";
 
-export function AppRoot(){
+export function Root(){
     
     return(
 

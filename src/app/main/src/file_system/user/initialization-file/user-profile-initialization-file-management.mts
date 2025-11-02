@@ -6,6 +6,7 @@ import path from 'node:path';
 import { checkIfFileExists } from '../../util/file-fs.mjs';
 import crypto from 'crypto'
 import { z } from 'zod'
+import { getAuthenticationWindowInstance } from '../../../windows/authentication/authentication-window.mjs';
 
 export const USER_INIT_FILE_NAME = 'user-profile-initialization-file.oph'
 const SALT_LENGTH = 16; // bytes

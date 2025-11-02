@@ -1,6 +1,6 @@
 import type { UserReferenceType } from "@oph/types/app/user-reference.js";
 import { ResultError, type ResultType } from "@oph/types/dev/result-type.js";
-import type { IpcHandleFunctionStructureType } from "../../../util/ipc-handle-functions-structure.js";
+import type { IpcHandleFunctionStructureType } from "../../../../util/ipc-handle-functions-structure.js";
 
 export const GetUsersReferencesListResultErrorTypes = {
 

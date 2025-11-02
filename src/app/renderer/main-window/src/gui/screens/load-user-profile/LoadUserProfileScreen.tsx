@@ -1,5 +1,5 @@
 import { LoadUserProfileScreensManager } from "./screens-management/ScreensManager";
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useLoadUserProfileParamsStore } from "./state/stores";
 import { useLoadUserProfileScreensState } from "./screens-management/state/stores";
 import { LoadUserProfileScreens } from "./screens-management/util/screens";
@@ -12,6 +12,8 @@ import { ContentWrapper } from "../../../components/content_wrapper/ContentWrapp
 
 export function LoadUserProfileScreen() {
 
+    const wasRequestedUserLogin = useRef<boolean>(false)
+
     const { initFilePath, clear } = useLoadUserProfileParamsStore()
 
     const { isUserLogged } = useUserStateStore()
@@ -20,11 +22,19 @@ export function LoadUserProfileScreen() {
 
     const userDashboardLouncher = useUserDashboardLouncher()
 
-    const loadUserProfile = useCallback(async (initFilePath: string) => {
+    const loadUserProfile = useCallback((initFilePath: string) => {
 
-        setScreenToDisplay(LoadUserProfileScreens.LOADING)
+        if (!wasRequestedUserLogin.current) {
 
-        ipc.appManagement.userManagement.loadUserProfile(initFilePath)
+            setScreenToDisplay(LoadUserProfileScreens.LOADING)
+
+            wasRequestedUserLogin.current = true
+
+            ipc.appManagement.userManagement.loadUserProfile(initFilePath).then((value) => {
+
+                console.log(value)
+            })
+        }
 
     }, [setScreenToDisplay])
 

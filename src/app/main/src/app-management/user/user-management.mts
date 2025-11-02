@@ -1,6 +1,6 @@
 import type { UserForRegistrationType } from '@oph/types/app/user/user-for-registration.js';
 import type { ResultType } from '@oph/types/dev/result-type.js';
-import type { ProfileCreationProgressType } from '@oph/ipc/channels/app-management/channels/create-user-profile.js';
+import type { ProfileCreationProgressType } from '@oph/ipc/channels/main-window/app-management/channels/create-user-profile.js';
 
 import { ResultError, resultFail, resultValue } from '@oph/types/dev/result-type.js';
 import { v4 as uuidv4 } from 'uuid';
@@ -95,7 +95,7 @@ export async function createUserProfile(userProfileForRegistration: UserForRegis
 
 export async function loadUser(userDirectory: string, password?: string): Promise<boolean> {
 
-    const readUserInitFileResult = await readUserInitFile(userDirectory, '123456')
+    const readUserInitFileResult = await readUserInitFile(userDirectory)
 
     if (readUserInitFileResult.ok) {
 

@@ -2,7 +2,7 @@ import { getUsersReferencesList } from "../../file_system/app/app-data/users-ref
 import { resultValue } from "@oph/types/dev/result-type.js";
 import { BrowserWindow } from "electron";
 import { createUserProfile, loadUser } from "../../app-management/user/user-management.mjs";
-import { AppTypesafeIpcHandler } from "@oph/ipc/channels/app-management/app-management.js";
+import { AppTypesafeIpcHandler } from "@oph/ipc/channels/main-window/app-management/app-management.js";
 import { configureUserChannels } from "./user/user-channels.mjs";
 
 export function configureAppChannels(browserWindow: BrowserWindow) {

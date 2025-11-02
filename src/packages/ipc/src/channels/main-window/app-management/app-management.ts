@@ -1,4 +1,4 @@
-import type { IpcHandleFunctionBaseType, IpcHandleFunctionMappingStructureType } from "../../util/ipc-handle-functions-structure.js";
+import type { IpcHandleFunctionBaseType, IpcHandleFunctionMappingStructureType } from "../../../util/ipc-handle-functions-structure.js";
 import { type CreateUserProfileFunctionComponentsType } from "./channels/create-user-profile.js"
 import { type GetUsersReferencesListFunctionComponentsType } from "./channels/get-users-references-list.js"
 import { ipcMain } from "electron";
@@ -23,8 +23,6 @@ export function AppTypesafeIpcHandler<Key extends keyof AppIpcHandleFunctionsMap
 ) {
 
     ipcMain.handle(channel, (_, args) => {
-
-        //TODO: validateEventFrame(evt.senderFrame)
 
         return handler(args)
     })

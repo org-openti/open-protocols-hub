@@ -1,7 +1,7 @@
 import type { NostrProfileReference } from "@oph/schemas/app/user/nostr-profile-reference.js";
 
 import { ipcMain } from "electron";
-import { linkMainSide } from "@oph/ipc/channels/app-management/user-management/channels/get-nostr-profiles-list.js";
+import { linkMainSide } from "@oph/ipc/channels/main-window/app-management/user-management/channels/get-nostr-profiles-list.js";
 import { getNostrProfilesReferences } from "../../../../user-session/user-session.mjs";
 
 export function configureGetNostrProfilesReferencesList() {

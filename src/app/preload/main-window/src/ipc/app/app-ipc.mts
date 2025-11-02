@@ -1,4 +1,4 @@
-import type { AppIpcHandleFunctionsMapping } from '@oph/ipc/channels/app-management/app-management.js'
+import type { AppIpcHandleFunctionsMapping } from '@oph/ipc/channels/main-window/app-management/app-management.js'
 
 import { ipcRenderer } from 'electron'
 

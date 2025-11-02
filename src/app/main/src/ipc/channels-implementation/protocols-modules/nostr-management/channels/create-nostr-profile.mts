@@ -1,8 +1,8 @@
-import type { ChannelResponse } from "@oph/ipc/channels/protocols-modules/nostr-management/channels/create-nostr-profile.js";
+import type { ChannelResponse } from "@oph/ipc/channels/main-window/protocols-modules/nostr-management/channels/create-nostr-profile.js";
 
 import { ipcMain } from "electron";
 import { createNostrProfile } from "../../../../../protocols-modules-management/nostr/create-nostr-profile.mjs";
-import { error, linkHandler, success } from "@oph/ipc/channels/protocols-modules/nostr-management/channels/create-nostr-profile.js";
+import { error, linkHandler, success } from "@oph/ipc/channels/main-window/protocols-modules/nostr-management/channels/create-nostr-profile.js";
 
 export async function configureCreateNostrProfile() {
 

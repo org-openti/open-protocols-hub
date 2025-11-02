@@ -1,6 +1,6 @@
 import { ipcMain } from "electron"
 import { getStandardNostrProfilesDirectory } from "../../../../../file_system/paths/user/standard-nostr-profiles-directory.mjs"
-import { error, safeHandle, success } from "@oph/ipc/channels/app-management/user-management/channels/get-the-default-user-directory-of-nostr-profiles.js"
+import { error, safeHandle, success } from "@oph/ipc/channels/main-window/app-management/user-management/channels/get-the-default-user-directory-of-nostr-profiles.js"
 
 export function registerGetTheDefaultUserDirectoryOfNostrProfilesChannelHandle() {
 

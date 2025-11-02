@@ -8,7 +8,7 @@
         "rootDir": "src",
         "skipLibCheck": true,
         "target": "esnext",
-        "tsBuildInfoFile": "tmp/tsconfig.main-dev.tsbuildinfo",
+        "tsBuildInfoFile": "tmp/tsconfig.tsbuildinfo",
         "verbatimModuleSyntax": true,
     },
     "include": [
@@ -16,7 +16,19 @@
     ],
     "references": [
         {
-            "path": "../preload/main-window/tsconfig.preload.json"
+            "path": "../../packages/schemas/tsconfig.json"
+        },
+        {
+            "path": "../../packages/ipc/tsconfig.json"
+        },
+        {
+            "path": "../preload/authentication-window/tsconfig.json"
+        },
+        {
+            "path": "../preload/main-window/tsconfig.json"
+        },
+        {
+            "path": "../renderer/authentication-window/tsconfig.json"
         },
         {
             "path": "../renderer/main-window/tsconfig.json"

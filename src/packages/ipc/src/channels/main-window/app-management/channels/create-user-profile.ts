@@ -1,7 +1,7 @@
 import type { ResultType } from "@oph/types/dev/result-type.js";
 import type { UserForRegistrationType } from "@oph/types/app/user/user-for-registration.js";
 import { ResultError } from "@oph/types/dev/result-type.js";
-import type { IpcHandleFunctionStructureType } from "../../../util/ipc-handle-functions-structure.js";
+import type { IpcHandleFunctionStructureType } from "../../../../util/ipc-handle-functions-structure.js";
 
 export type CreateUserProfileResultErrorTypes = 'Unknown'
 

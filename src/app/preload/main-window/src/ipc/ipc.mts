@@ -1,11 +1,11 @@
-import type { AppIpcHandleFunctionsMapping } from '@oph/ipc/channels/app-management/app-management.js'
-import type { IPC } from '@oph/ipc/ipc.js'
+import type { AppIpcHandleFunctionsMapping } from '@oph/ipc/channels/main-window/app-management/app-management.js'
+import type { MainWindowIPC } from '@oph/ipc/ipc.js'
 
 import { appIpcInvoke } from './app/app-ipc.mjs'
 import { protocolsModules } from './channels-implementation/protocols-modules/protocols-modules.js'
 import { userManagement } from './channels-implementation/app-management/user-management/user-management.mjs'
 
-export const ipc: IPC = {
+export const mainWindowIPC: MainWindowIPC = {
 
     appManagement: {
 

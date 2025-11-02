@@ -1,9 +1,10 @@
-import z from "zod"
+import type { IpcMain, WebContents } from 'electron';
+import z from 'zod'
 
 const CHANNEL_NAME = 'load-user-profile'
 
 const ArgsSchema = z.string();
-const ResultSchema = z.enum(["SUCCESS", "INTERNAL_ERROR", "INVALID_PASSWORD"]);
+const ResultSchema = z.enum(['SUCCESS', 'UNKNOWN_ERROR', 'INVALID_PASSWORD', 'OPERATION_CANCELED']);
 
 export type Args = z.infer<typeof ArgsSchema>;
 type Result = z.infer<typeof ResultSchema>;
@@ -14,22 +15,22 @@ export type ExposedFunction = (userProfileInitFilePath: Args) => Promise<Result>
 
 export function configureMainSideChannel(
 
-    ipcMain: Electron.IpcMain,
+    ipcMain: IpcMain,
     handlerFunction: (initFilePath: Args) => Promise<Result>
 
 ) {
-    
-    ipcMain.handle(CHANNEL_NAME, async (_, args) => {
+
+    ipcMain.handle(CHANNEL_NAME, async (_, args): Promise<Result> => {
 
         const parse = ArgsSchema.safeParse(args)
 
-        if(parse.success){
+        if (parse.success) {
 
             return handlerFunction(parse.data)
-        
+
         } else {
 
-            return ResultEnum.INTERNAL_ERROR
+            return 'UNKNOWN_ERROR'
         }
     })
 }
@@ -42,18 +43,18 @@ export function configureRendererSideChannel(
 ): Promise<Result> {
 
     return new Promise<Result>((resolve) => {
-        
+
         ipcRenderer.invoke(CHANNEL_NAME, userProfileInitFilePath).then((value) => {
 
             const parse = ResultSchema.safeParse(value)
 
-            if(parse.success){
+            if (parse.success) {
 
                 resolve(parse.data)
 
             } else {
 
-                resolve(ResultEnum.INTERNAL_ERROR)
+                resolve('UNKNOWN_ERROR')
             }
         })
     })

@@ -1,4 +1,4 @@
-import type { ProtocolsModules } from "@oph/ipc/channels/protocols-modules/protocols-modules.js";
+import type { ProtocolsModules } from "@oph/ipc/channels/main-window/protocols-modules/protocols-modules.js";
 
 import { nostrManagement } from "./nostr-management/nostr-management.js";
 

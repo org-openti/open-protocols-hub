@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"build": "tsc -p tsconfig.schemas.json",
+		"build": "tsc -p tsconfig.json",
         "build:prod": "pnpm run build",
 		"clean": "rm -rf dist && rm -rf tmp"
 	},

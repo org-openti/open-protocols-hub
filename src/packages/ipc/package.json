@@ -4,7 +4,7 @@
     "type": "module",
     "description": "",
     "scripts": {
-        "build": "tsc -p tsconfig.ipc.json",
+        "build": "tsc -p tsconfig.json",
         "build:prod": "pnpm run build",
         "clean": "rm -rf dist && rm -rf tmp"
     },
@@ -13,12 +13,12 @@
     "license": "ISC",
     "packageManager": "pnpm@10.18.1",
     "dependencies": {
-        "zod": "^4.1.12",
+        "@oph/schemas": "workspace:*",
         "@oph/types": "workspace:*",
-        "@oph/schemas": "workspace:*"
+        "zod": "^4.1.12"
     },
     "devDependencies": {
-        "electron": "37.2.0",
+        "electron": "39.0.0",
         "typescript": "^5.9.3"
     },
     "exports": {

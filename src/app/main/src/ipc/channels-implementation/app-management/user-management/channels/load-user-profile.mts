@@ -1,20 +1,43 @@
-import { ipcMain } from "electron";
+import { BrowserWindow, ipcMain } from "electron";
 import { loadUser } from "../../../../../app-management/user/user-management.mjs";
-import { configureMainSideChannel, ResultEnum } from "@oph/ipc/channels/app-management/user-management/channels/load-user-profile.js";
+import { configureMainSideChannel, ResultEnum } from "@oph/ipc/channels/main-window/app-management/user-management/channels/load-user-profile.js";
+import { getAuthenticationWindowInstance } from "../../../../../windows/authentication/authentication-window.mjs";
 
 export function configureLoadUserProfileChannel() {
 
     configureMainSideChannel(ipcMain, async (initFilePath) => {
 
-        const result = await loadUser(initFilePath)
+        let sucess = await loadUser(initFilePath)
 
-        if(result){
+        if (sucess) {
 
-            return ResultEnum.SUCCESS
-            
+            return 'SUCCESS'
+
         } else {
 
-            return ResultEnum.INTERNAL_ERROR
+            const authenticationWindow = await getAuthenticationWindowInstance('get')
+
+            authenticationWindow.addResultListener((result) => {
+
+                switch (result.status) {
+
+                    case "confirmed": { result.data }
+                    case "canceled": return 'OPERATION_CANCELED'
+                }
+            })
+
+            authenticationWindow.show()
+
+            sucess = await loadUser(initFilePath, '123456')
+
+            if (sucess) {
+
+                return 'SUCCESS'
+
+            } else {
+
+                return 'UNKNOWN_ERROR'
+            }
         }
     })
 }

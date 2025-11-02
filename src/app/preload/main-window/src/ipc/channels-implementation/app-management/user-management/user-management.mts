@@ -1,4 +1,4 @@
-import type { UserManagement } from "@oph/ipc/channels/app-management/user-management/user-management.js";
+import type { UserManagement } from "@oph/ipc/channels/main-window/app-management/user-management/user-management.js";
 
 import { logoutUser } from "../../../app/user/logout-user.mjs";
 import { setIsUserLoggedChangeListener } from "../../../app/user/send-is-user-logged-value.mjs";

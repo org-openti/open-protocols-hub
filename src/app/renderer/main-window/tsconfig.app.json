@@ -34,7 +34,7 @@
 	],
 	"references": [
 		{
-			"path": "../../../packages/ipc/tsconfig.ipc.json"
+			"path": "../../../packages/ipc/tsconfig.json"
 		}
 	]
 }

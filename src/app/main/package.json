@@ -5,15 +5,14 @@
     "main": "dist-dev/main.mjs",
     "type": "module",
     "scripts": {
-        "dev": "NODE_ENV=development electron .",
+        "dev": "electron .",
         "clean": "rm -rf dist-dev && rm -rf dist-prod && rm -rf build-prod && rm -rf tmp",
         "prepare:prod": "pnpm -r run build && pnpm install --filter @oph/main --prod",
-        "build": "tsc -p tsconfig.main.json",
+        "build": "tsc -p tsconfig.json",
         "build:prod": "node ./build-prod.ts"
     },
     "keywords": [],
     "author": "O Profeta",
-    "license": "ISC",
     "packageManager": "pnpm@10.18.1",
     "dependencies": {
         "@oph/ipc": "workspace:*",
@@ -24,7 +23,7 @@
         "zod": "^4.1.5"
     },
     "devDependencies": {
-        "electron": "38.3.0",
+        "electron": "39.0.0",
         "esbuild": "^0.25.11",
         "typescript": "^5.9.3"
     }
